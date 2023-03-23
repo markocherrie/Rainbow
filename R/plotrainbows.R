@@ -378,7 +378,7 @@ plotrainbows<-function(df, shape, colourby="individual", colourpal, alpha=0.9, l
 
 
   # plot
-  p <- ggplot(df, aes(x1, y1)) +
+  p <- ggplot2::ggplot(df, aes(x1, y1)) +
     geom_rect(aes(xmin = x1, xmax = x2, ymin = y1, ymax = y2, fill = group,
                   alpha = alpha),
               color = "white", size = 2) +
