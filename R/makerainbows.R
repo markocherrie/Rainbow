@@ -4,7 +4,8 @@
 #' @param ... Vector specifying the boxes for each band
 #' @return Dataframe
 #' @examples
-#' rainbowdf(1,1,1,1,1,1,1,1);
+#' df<-rainbowdf(1,1,1,1,1,1,1,1);
+#' df
 #' @export
 
 makerainbows<-function(...){

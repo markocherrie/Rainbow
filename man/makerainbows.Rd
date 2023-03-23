@@ -16,5 +16,6 @@ Dataframe
 Create dataframe for rainbow plot
 }
 \examples{
-rainbowdf(1,1,1,1,1,1,1,1);
+df<-rainbowdf(1,1,1,1,1,1,1,1);
+df
 }

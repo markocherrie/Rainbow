@@ -10,7 +10,8 @@
 #' @param innercircletext Vector of labels for boxes, specify centre ring clockwise outward; default is blank
 #' @return ggplot2 rainbow plot
 #' @examples
-#' plotrainbows(makerainbows(1,1,1,1,1,1,1,1), shape="semi-circle", colourby="individual", colourpal="GilbertBaker1978", labels=c("Sprit", "Serenity", "Magic", "Nature", "Sunlight", "Healing","Life", "Sex"));
+#' df <- makerainbows(1,1,1,1,1,1,1,1)
+#' plotrainbows(df, shape="semi-circle", colourby="individual", colourpal="GilbertBaker1978", labels=c("Sprit", "Serenity", "Magic", "Nature", "Sunlight", "Healing","Life", "Sex"));
 #' @export
 
 plotrainbows<-function(df, shape, colourby="individual", colourpal, alpha=0.9, labels, innercircletext=""){

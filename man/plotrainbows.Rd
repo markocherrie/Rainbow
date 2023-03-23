@@ -36,5 +36,6 @@ ggplot2 rainbow plot
 Create a rainbow plot using ggplot2
 }
 \examples{
-plotrainbows(makerainbows(1,1,1,1,1,1,1,1), shape="semi-circle", colourby="individual", colourpal="GilbertBaker1978", labels=c("Sprit", "Serenity", "Magic", "Nature", "Sunlight", "Healing","Life", "Sex"));
+df <- makerainbows(1,1,1,1,1,1,1,1)
+plotrainbows(df, shape="semi-circle", colourby="individual", colourpal="GilbertBaker1978", labels=c("Sprit", "Serenity", "Magic", "Nature", "Sunlight", "Healing","Life", "Sex"));
 }
