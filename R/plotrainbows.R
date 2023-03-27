@@ -14,7 +14,7 @@
 #' plotrainbows(df, shape="semi-circle", colourby="individual", colourpal="GilbertBaker1978", labels=c("Sprit", "Serenity", "Magic", "Nature", "Sunlight", "Healing","Life", "Sex"));
 #' @export
 
-plotrainbows<-function(df, shape, colourby="individual", colourpal, alpha=0.9, labels, innercircletext=""){
+plotrainbows<-function(df, shape, colourby="individual", colourpal="", alpha=0.9, labels, innercircletext=""){
 
   # get the labels
   #labels <- unlist(list(...))
