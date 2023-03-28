@@ -8,7 +8,7 @@ plotrainbows(
   df,
   shape,
   colourby = "individual",
-  colourpal,
+  colourpal = "",
   alpha = 0.9,
   labels,
   innercircletext = ""
@@ -36,6 +36,22 @@ ggplot2 rainbow plot
 Create a rainbow plot using ggplot2
 }
 \examples{
+
+# Wider Determinants of Health
+df <- makerainbows(1,1,6,1)
+labelsWDH<-c("Individual Lifestyle Factors",
+             "Social and Community Networks",
+             "Food prod.", "Education", "Work Env.", "Water/Sanitation", "Healthcare", "Housing",
+             "General Socioeconomic, Cultural and Environmental Factors")
+plotrainbows(df, shape="semi-circle", colourby="band", colourpal="",labels=labelsWDH, innercircletext = "Age, sex and constitutional factors")
+
+Place Standard
+
+
+Doughnut (economic model)
+
+
+# Pride Rainbow
 df <- makerainbows(1,1,1,1,1,1,1,1)
 plotrainbows(df, shape="semi-circle", colourby="individual", colourpal="GilbertBaker1978", labels=c("Sprit", "Serenity", "Magic", "Nature", "Sunlight", "Healing","Life", "Sex"));
 }

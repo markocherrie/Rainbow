@@ -10,6 +10,22 @@
 #' @param innercircletext Vector of labels for boxes, specify centre ring clockwise outward; default is blank
 #' @return ggplot2 rainbow plot
 #' @examples
+#'
+#' # Wider Determinants of Health
+#' df <- makerainbows(1,1,6,1)
+#' labelsWDH<-c("Individual Lifestyle Factors",
+#'              "Social and Community Networks",
+#'              "Food prod.", "Education", "Work Env.", "Water/Sanitation", "Healthcare", "Housing",
+#'              "General Socioeconomic, Cultural and Environmental Factors")
+#' plotrainbows(df, shape="semi-circle", colourby="band", colourpal="",labels=labelsWDH, innercircletext = "Age, sex and constitutional factors")
+#'
+#' Place Standard
+#'
+#'
+#' Doughnut (economic model)
+#'
+#'
+#' # Pride Rainbow
 #' df <- makerainbows(1,1,1,1,1,1,1,1)
 #' plotrainbows(df, shape="semi-circle", colourby="individual", colourpal="GilbertBaker1978", labels=c("Sprit", "Serenity", "Magic", "Nature", "Sunlight", "Healing","Life", "Sex"));
 #' @export
