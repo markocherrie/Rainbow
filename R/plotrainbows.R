@@ -428,7 +428,7 @@ plotrainbows<-function(df, shape, colourby="individual", colourpal="", alpha=0.9
   # Add inner text here
   if(innercircletext!=""){
 
-    plotout <- plotout + annotate("text", x=0, y=-5, label = wrapper(innercircletext, width = 5), size = 4.6) #+
+    plotout <- plotout + annotate("text", x=0, y=-5, label = wrapper(innercircletext, width = 10), size = 4.6) #+
     #geom_point(aes(x=x, y=y), data=data.frame(x=runif(1), y=runif(1)-7), size=65, shape=1, lwd=2, color="black")
   }
 
