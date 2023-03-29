@@ -40,7 +40,7 @@ Create a rainbow plot using ggplot2
 # Wider Determinants of Health
 df <- makerainbows(1,1,6,1)
 labelsWDH<-c("Individual Lifestyle Factors",
-     gi        "Social and Community Networks",
+             "Social and Community Networks",
              "Food prod.", "Education", "Work Env.", "Water/Sanitation", "Healthcare", "Housing",
              "General Socioeconomic, Cultural and Environmental Factors")
 plotrainbows(df, shape="semi-circle", colourby="band", colourpal="",labels=labelsWDH, innercircletext = "Age, sex and constitutional factors")
