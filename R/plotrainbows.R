@@ -15,10 +15,13 @@
 #' df <- makerainbows(1,1,6,1)
 #' labelsWDH<-c("Individual Lifestyle Factors",
 #'              "Social and Community Networks",
-#'              "Food prod.", "Education", "Work Env.", "Water/Sanitation", "Healthcare", "Housing",
+#'              "Food prod.", "Education", "Work Env.", "Sanitation", "Healthcare", "Housing",
 #'              "General Socioeconomic, Cultural and Environmental Factors")
 #' plotrainbows(df, shape="semi-circle", colourby="band", colourpal="",labels=labelsWDH, innercircletext = "Age, sex and constitutional factors")
 #'
+#' # Hierachy of controls
+#' df <- makerainbows(1,1,1,1,1)
+#'  plotrainbows(df, shape="semi-circle", colourby="band", colourpal="", labels=c("Elimination", "Substitution", "Engineering controls", "Administrative controls", "PPE"), innercircletext = "Worker exposure")
 #'
 #' # Pride Rainbow
 #' df <- makerainbows(1,1,1,1,1,1,1,1)
